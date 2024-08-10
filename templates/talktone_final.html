@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Talk Tone</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .reminder-message {
+      display: none;
+      color: green;
+      margin-top: 10px;
+    }
+
+    .uploaded-file-name {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-6 flex items-center justify-between relative">
+      <a href="#" class="text-xl font-bold text-gray-800">
+        <img src="{{ url_for('static', filename='talktone.png') }}" alt="logo" class="h-28">
+
+
+      </a>
+      <div class="flex gap-4">
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">Login</a>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="bg-blue-300 py-16">
+    <div class="container mx-auto px-9">
+        <h1 class="text-5xl font-bold  text-center mb-4">Welcome to Talk Tone !</h1>
+        <p class="text-lg text-center text-gray-800">"Welcome to the World of Voices! Unleash the Power of Dubbing
+          Excellence."</p>
+    </div>
+  </section>
+  
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Actions</h2>
+      <div class="grid lg:gap-8">
+        
+        <form action="/copyfile" method="post" enctype="multipart/form-data">
+          <input type="file" name="file" id="uploadInput" class="hidden">
+          <label for="uploadInput" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-5 rounded cursor-pointer">
+            Upload Video
+          </label>
+
+
+          <p id="reminderMessage" class="reminder-message"></p>
+          <p id="continueMessage" class="mt-4">
+            <a href="{{ url_for('nur2_page') }}" class="text-blue-500 underline">Click here to continue</a>
+          </p>
+          <input type="submit" value="Submit" class="hidden">
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="bg-gray-800 text-white py-14 flex items-center justify-self-center mt-80">
+    <div class="container mx-auto px-52">
+      <p class="text-centre text-lg ">© 2023 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+-
+  <script>
+    const uploadInput = document.getElementById('uploadInput');
+    const reminderMessage = document.getElementById('reminderMessage');
+    const continueMessage = document.getElementById('continueMessage');
+
+    uploadInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        reminderMessage.innerText = `File "${file.name}" is uploaded.`;
+        reminderMessage.style.display = 'block';
+        continueMessage.style.display = 'block';
+
+        const formData = new FormData();
+        formData.append('file', file);
+        fetch('/copyfile', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.text())
+        .then(result => {
+          console.log(result);
+        })
+        .catch(error => console.error(error));
+      }
+    });
+  </script>
+</body>
+
+</html>

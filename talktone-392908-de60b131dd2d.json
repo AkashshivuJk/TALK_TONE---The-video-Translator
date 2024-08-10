@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "talktone-392908",
+  "private_key_id": "de60b131dd2d8270e50d9b71a74e8d05032bc463",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9YI+/AFXYSFei\n4Rvixuj4S6nLLJ6UfNl8hgs4ehom6x97HZAIlUzepYQSOCCqr8DdsG1SkXt96BfV\noSiHa6QSmem/XwMYpWy+DEXKC+8UiZGjjYiQwFVaWPQHwyaimf3OSFeTtUZMPpOB\nMlQFSuNzYjOWGAzQvJohPlXEAwLPQxFEXj5ZMJu7ZntHsNb0WLfG3XZ2m0UNokDp\nTmXjEBJQWIpE+xBeVQXkm6+EQi4jgp+yEsNechO1yWqcUWRe0zV9SCXW1K7HFslG\nI4cUgQI7tEmW4gpLH3IKEHhnMRpacAp1ESy3h30lhw6COESjFNmQAFpjgkTXs8Bn\nSRlTbMq3AgMBAAECggEASdmfFNf3ohlL+5uXeU8iSLmQ5EdpK/SoB3RqacLL8gNc\nynET2xUF3gljwIscyhMxvgHwD/Pl2YqpyMhI+s5SNGLLEbLmjTTtfAtjJ9CRkku3\nfLVT3UbzwgDQYTqMFXrBzDDP3i0h1dfNQ+OxekLjAfr4rP6B+OCjpnUdkwuti88q\n7Yka7HiRJkMmi29OKc1432E526jm2Ap1dlBY2q8d1Bt9VlPr+drhna/ja5apXSq1\nfVz1Y45F7Py6LnIIekryPwKixWZy0pM8BDgzpQ/yTPm7AnetaRrGW6SFBTeo2odP\nvrfU1fEwqjump0a7F+xXgpFOQagprUhIow/3v5TBSQKBgQDe9zIcDsSUyfRonRLy\nwLDvBbj8C3X8p9sMkTLqqdnYB18SNdAmIQ1GrFibBJszp/ptDVyhxtuF00biUzEv\nYWMrAhiQ2tOP11dZ3uFrDkqfkKfN2qkC5S+geMDWzaStIT1hQEWhcAlnLOQ27zh9\nhpBs2+bxQBlhSuQjfnol6IbVBQKBgQDZb2ZJexQsYLMQYwSbo4l3bellhksr4Ve4\n4QoM5dojS1CzeIrDUPRpikjmFf50sxWoq8JBCjGo8pmzGIgz0yRy1kAAcczPjY1i\nm3lIk5Lv76x443OomeRnorEEqKg4/mrh9hWAtCowV18/65L2GAFewtDZv3KXggNk\nBThW+rRtiwKBgGQQRGjbJ9YunIWmmK5hVAaxZseWzSjKnEATmeo+uAl/pWcix3uV\nMcQZ7NoFQzH3nSf76yqfeD2jCBjihRxidIMEucmoq3HOjuFCaaAGFe9umCCGlXs7\nKBi4mLLOL62TUVyn35gIE/A98V3GFnAfSAnS1t5Gih1j4ucbB+6jYH+RAoGAYUr8\nnRKqszTNyx5TeIUTxNH0ps4Rot/hTcO8qIrNMg/IW5YrmTwHMZaEChh7VKKxpVi9\nwjaag/uSFNZ8U5w96fi+iLRjLdgsFJx3B6epDx3SsgEsxpud3VWqGeiR5XbKQrPH\naWC0pA7kewihKOcS7eEEbPrCftLZS48eZ6UkyQMCgYEAoM05CL7IT3wK6hEEtI9X\n8GUAyBNgt6kjAmcVQuPmYoM2QaHcUvxyNJDVdrubJjUCjj0W6pGsDOakzhssh0X8\nehCvB5B7GD0rkjFKFj0G2L6EJHkt1MN1AUvaJkkWqcBod/Kf/y6XLLGJbyPMfU7m\ndc8J0jeY6PlElswCK1rmhoE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "talktone@talktone-392908.iam.gserviceaccount.com",
+  "client_id": "104447106285904895206",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/talktone%40talktone-392908.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
